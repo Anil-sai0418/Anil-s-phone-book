@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors');
 const app = express()
+require('dotenv').config()
 
 app.use(express.json())
 app.use(cors());
@@ -9,7 +10,7 @@ app.use(cors());
 
 // database connection
 
-mongoose.connect('mongodb://localhost:27017/mamulga').then(() => {
+mongoose.connect(process.env.MONGO_URL).then(() => {
   console.log("data base is connected");
 
 })
