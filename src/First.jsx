@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import FadeContent from './FadeContent';
+import FadeContent from './Fadecontent';
 
 export default function First() {
   const [data, setData] = useState({});
