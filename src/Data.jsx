@@ -86,7 +86,7 @@ export default function Data() {
           <input
             className="w-full h-12 px-4 py-2 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md shadow-inner text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 pr-14"
             type="search"
-            placeholder='Enter your name'
+            placeholder='Search contacts'
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />

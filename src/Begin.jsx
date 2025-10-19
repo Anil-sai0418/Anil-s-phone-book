@@ -1,3 +1,4 @@
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ThemeProvider } from "./components/theme-provider"
 
@@ -8,6 +9,16 @@ export default function Anil() {
     navigate('/First'); // Navigate to the First component (your contact adding page)
   };
 
+  React.useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === 'Enter') {
+        handleButtonClick();
+      }
+    };
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, []);
+
   return (
     <div className="h-screen w-full bg-black flex flex-col justify-center items-center px-6">
      <div className="fixed top-0 left-0 w-full z-50">
@@ -15,7 +26,7 @@ export default function Anil() {
      
     </ThemeProvider>
        <nav className="h-[70px] w-full ">
-        <div className='h-full w-[20%] flex justify-center items-center font-bold text-2xl text-white'>Phone Book</div>
+       
          <ThemeProvider/>
          
        </nav>

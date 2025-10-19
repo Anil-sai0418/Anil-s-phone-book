@@ -7,6 +7,5 @@ export default defineConfig({
   plugins: [react(),tailwindcss()],
   server:{
     port:1234
-  },
-  base:process.env.VITE_BASE_PATH || "/Anil-s-phone-book"
+  }
 })
