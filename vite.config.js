@@ -7,5 +7,12 @@ export default defineConfig({
   plugins: [react(),tailwindcss()],
   server:{
     port:1234
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   }
 })
