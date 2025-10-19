@@ -1,0 +1,28 @@
+{
+  "short_name": "Phone Book",
+  "name": "Phone Book App",
+  "icons": [
+    {
+      "src": "phone .jpeg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "phone .jpeg",
+      "type": "image/jpeg",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "phone .jpeg",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
