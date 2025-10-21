@@ -154,7 +154,7 @@ export default function First() {
                 >
                   Add Contact
                 </button>
-                <div className="absolute -top-12 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 flex items-center gap-1.5 px-3 py-2 bg-gray-900/90 backdrop-blur-sm rounded-lg text-sm font-medium text-gray-100 transition-all duration-200 shadow-xl pointer-events-none">
+                <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 flex items-center gap-1.5 px-3 py-2 bg-gray-900/90 backdrop-blur-sm rounded-lg text-sm font-medium text-gray-100 transition-all duration-200 shadow-xl pointer-events-none">
                   <span className="px-1.5 py-0.5 bg-gray-800 rounded text-xs font-mono">{navigator.platform.includes('Mac') ? '⌘' : 'Ctrl'}</span>
                   <span>+</span>
                   <span className="px-1.5 py-0.5 bg-gray-800 rounded text-xs font-mono">↵</span>
@@ -182,7 +182,7 @@ export default function First() {
                   </svg>
                   Contacts
                 </button>
-                <div className="absolute -top-12 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 flex items-center gap-1.5 px-3 py-2 bg-gray-900/90 backdrop-blur-sm rounded-lg text-sm font-medium text-gray-100 transition-all duration-200 shadow-xl whitespace-nowrap pointer-events-none">
+                <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 flex items-center gap-1.5 px-3 py-2 bg-gray-900/90 backdrop-blur-sm rounded-lg text-sm font-medium text-gray-100 transition-all duration-200 shadow-xl whitespace-nowrap pointer-events-none">
                   <span className="px-1.5 py-0.5 bg-gray-800 rounded text-xs font-mono">⇧</span>
                   <span>+</span>
                   <span className="px-1.5 py-0.5 bg-gray-800 rounded text-xs font-mono">↵</span>
