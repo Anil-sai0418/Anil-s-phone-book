@@ -229,7 +229,7 @@ export default function Data() {
           {numbers.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full">
               <p className='text-center text-3xl mt-30'>No contacts found</p>
-              <button
+              {/* <button
                 onClick={() => navigate('/First')}
                 className="mt-4 px-6 py-2 bg-indigo-500/80 hover:bg-indigo-600/90 text-white rounded-xl transition-all duration-300 flex items-center gap-2"
               >
@@ -237,7 +237,7 @@ export default function Data() {
                   <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
                 </svg>
                 Add Contact
-              </button>
+              </button> */}
             </div>
           ) : numbers.filter(data => data.name.toLowerCase().includes(searchTerm.toLowerCase())).length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full space-y-4">
